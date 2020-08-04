@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/bubbles/50/000000/monitor.png"/ type="image/x-icon">
+    <title>Bulma Peoject</title>
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+       <section class="hero has-background-info is-bold">
+           <div class="hero-head">
+               <!-- nav -->
+               <nav class="navbar" role="navigation" aria-label="main navigation">
+                   <div class="container">
+                        <div class="navbar-brand">
+                           
+                            <a class="navbar-item">
+                                <a class="brand">
+                                    <div class="brand-content">
+                                        <div class="brand-title">
+                                            <a href="" class="is-uppercase has-text-weight-light has-text-white-bis is-size-1">lorem </br>ipsum</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </a>
+                            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                              </a>
+                        </div>
+                       
+                        <div id="navbarBasicExample" class="navbar-menu">
+                            <div class="navbar-end">
+                                <!-- <label for="navbarBasicExample">Lorem, ipsum dolor.</label> -->
+                               
+                                <a href="" class="navbar-item">LOREM</a>
+
+                                <a href="" class="navbar-item">IPSUM</a>
+
+                                <a href="" class="navbar-item">DOLOR</a>
+                            </div>
+                        </div>
+                   </div>
+               </nav>
+           </div>
+           <div class="hero-body">
+               <div class="container has-text-centered">
+                   <h1 class="title">
+                       Lorem ipsum dolor sit amet, consectetur.
+                   </h1>
+                <h2 class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tenetur quis assumenda.
+                </h2>
+                <button class="button is-primary is-inverted is-outlined mb-0">Lorem Ipsum</button>
+               </div>
+           </div>
+       </section>
+       <!-- card -->
+       <section class="container">
+           <div class="block">
+               <div class="columns features py-4 px-4">
+                  <div class="column is-4">
+                    <label for="column">LOREM</label>
+                    <div class="card">
+                        <div class="card-image has-text-centered">
+                            <div class="card-content">
+                                <img src="https://source.unsplash.com/1600x900/?school">
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis aperiam voluptate. Totam, in delectus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="column is-4">
+                    <label for="column">LOREM</label>
+                    <div class="card">
+                        <div class="card-image has-text-centered">
+                            <div class="card-content">
+                                <img src="https://source.unsplash.com/1600x900/?teacher">
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis aperiam voluptate. Totam, in delectus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="column is-4">
+                    <label for="column">LOREM
+
+
+                    </label>
+                    <div class="card">
+                        <div class="card-image has-text-centered">
+                            <div class="card-content">
+                                <img src="https://source.unsplash.com/1600x900/?theater">
+                                <div class="content">
+                                    <h4>Lorem ipsum dolor sit.</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis aperiam voluptate. Totam, in delectus</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+           </div>
+       </section>
+    <footer class="hero has-background-info">
+       <nav class="navbar">
+        <div class="container">
+            <div class="navbar-start">
+                <p class="pt-3">&copy;Lorem Ipsum Dolor</p>
+            </div>
+            <div class="navbar-end">
+                <a href="" class="navbar-item">LOREM</a>
+
+                <a href="" class="navbar-item">IPSUM</a>
+
+                <a href="" class="navbar-item">DOLOR</a>
+            </div>
+        </div>
+       </nav>
+    </footer>
+</body>
+<!-- menu script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
+</html>
